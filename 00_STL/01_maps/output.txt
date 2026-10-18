@@ -1,6 +1,4 @@
-size: 5
+6 adb
+2 abd
+12 acd
 1 abc
-2 acb
-3 bca
-4 abd
-5 acd

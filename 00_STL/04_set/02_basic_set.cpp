@@ -5,24 +5,23 @@ int main() {
     set<int> st;
     st.insert(12);
     st.insert(10);
-    st.insert(12);
-    st.insert(54);
-    st.insert(25);
+    st.insert(5);
+    st.insert(14);
+    st.insert(34);
+    st.insert(1);
     st.insert(10);
     st.insert(5);
-    st.insert(6);
-    st.insert(53);
+    st.insert(10);
 
-    for(auto &value : st) {
-        cout << value << " ";
+    for(auto&it : st) {
+        cout << it << " ";
     }
+    cout << endl;
 
-    cout << "\n";
-
-    // auto lb = st.lower_bound(11);
-    // auto up = st.upper_bound(11);
-    cout << *st.lower_bound(10) << " " << *st.upper_bound(10) << "\n";
-
+    auto lb = st.lower_bound(10);
+    auto ub = st.upper_bound(10);
+    cout << *lb << " " << *ub << endl;
+    
     auto it1 = st.begin();
     it1++;
 
@@ -30,10 +29,10 @@ int main() {
     it2--;
 
     st.erase(it1, it2);
-    for(auto value : st) {
-        cout << value << " ";
-    }
 
+    for(auto &it : st) {
+        cout << it << " ";
+    }
     cout << endl;
 
 }
